@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to food khor</title>
+    <!-- bootstrap 5 css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- OWL  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css link-->
+    <link rel="stylesheet" href="style.css">
+     <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+</head>
+<body>
+    <!-- header  start -->
+    <div class="hed">  
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>resto.</a>
+        <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            <a href="#dishes">dishes</a>
+            <a href="#upcome">upcoming</a>
+            <a href="#revie">review</a>
+            <a href="#order">order</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+    </header>
+   </div>
+ <!-- header ends-->
+<!-- home section starts  -->
+<div class="banner-container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+
+        <div class="carousel-indicators  mx-5 rounded">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-2 bg-white" style="margin-left: 200px;">
+                    <div class="my-15">
+                        <h1 class="">Hot and Spicy Noddules</h1>
+                        <p class="w-75">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla   laborum voluptates!
+                        </p>
+                        
+                    </div>
+                    <div class="">
+                        <img src="home-img-1.png" width="300px"
+                            height="300px" class="m-3" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class=" row row-cols-2 bg-white " style="margin-left: 200px;">
+                    <div class="my-15">
+                        <h1 class="">Fried Chiken</h1>
+                        <p class="w-75">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla   laborum voluptates!
+                        </p>
+                    </div> 
+                    <div class="">
+                        <img src="home-img-2.png" width="300px"
+                            height="300px" class="m-3" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class=" row row-cols-2 bg-white" style="margin-left: 200px;">
+                    <div class="my-15">
+                        <h1 class="">Pizzza</h1>
+                        <p class="w-75">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla   laborum voluptates!
+                        </p>
+                    </div>
+
+                    <div class="">
+                        <img src="home-img-3.png" width="300px"
+                            height="300px" class="m-3" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- home section ends -->
+       
+ <!-- products  start -->
+ <h1 style="text-align: center ; color: #7d8982; font-size: 30px;">Products</h1>
+ <div class="main" id="dishes">
+   
+    <div class="pro">
+        <div class="produ"> 
+            <div class="problem">
+               <div class="problem-image dish-1"> </div>                   
+                <h2>Burger</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla   laborum voluptates!</p>
+                <span>5$</span><button onclick="myFunction(5.0)">add to cart</button> 
+            </div>        
+            <div class="problem">
+               <div class="problem-image dish-2"> </div>                   
+                <h2>Chiken nagets</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla   laborum voluptates!</p>
+                <span>15$</span><button onclick="myFunction(15.0)">add to cart</button> 
+            </div>
+            <div class="problem">
+               <div class="problem-image dish-3"> </div>                   
+                <h2>Chiken Roast</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla   laborum voluptates!</p>
+                <span>25$</span><button onclick="myFunction(25.0)">add to cart</button> 
+            </div>
+        </div>
+        <div class="prodo">     
+            <div class="problem">
+               <div class="problem-image dish-4"> </div>                   
+                <h2>Pizzza</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla   laborum voluptates!</p>
+                <span>10$</span><button onclick="myFunction(10.0)">add to cart</button> 
+            </div>        
+            <div class="problem">
+               <div class="problem-image dish-5"> </div>                   
+                <h2>Choclate cake</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla   laborum voluptates!</p>
+                <span>8$</span><button onclick="myFunction(8.0)">add to cart</button> 
+            </div>
+            <div class="problem">
+               <div class="problem-image dish-6"> </div>                   
+                <h2>Fried Chicken</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla   laborum voluptates!</p>
+                <span>12$</span><button onclick="myFunction(12.0)">add to cart</button> 
+            </div>  
+        </div>    
+
+    </div>
+    <div class="container p-5 m-5 border-dark  border-1">
+      <div class="cash w-100" id="total_price">
+          <table class="table table-bordered table-responsive display-3">
+              <thead>
+                <tr>
+                  <th colspan="2">My Cart</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><i class="fas fa-utensils"></i></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-sharp fa-solid fa-dollar-sign"></i></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-solid fa-truck"></i></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-shipping-fast"></i></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Total Price</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Tax</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Total Price with Tax</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      <button class="btn px-4 py-2 btn-danger" onclick="checkOut()">Check OUT</button>
+  </div>
+
+</div>
+ <!-- products  end-->
+ <!--upcoming products--> 
+ <h1 style="text-align: center ; color: #7d8982; font-size: 30px;">Upcoming products</h1>
+     <div class="upcom" id="upcome">
+        <div class="card">
+              <div class="card-image menu-1"> </div>                   
+              <h2>Orange Juice</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla laborum voluptates!</p>
+        </div> 
+        <div class="card">
+              <div class="card-image menu-2"></div>                   
+              <h2>Burger</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam expedita eius repudiandae?</p>
+        </div>
+        <div class="card">
+              <div class="card-image menu-3"></div>                   
+              <h2>Pan cakes</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa esse cumque temporibus.</p>         
+        </div>
+     </div>    
+<!--upcoming products end-->
+ <!-- order section starts  -->
+ <h1 style="text-align: center ; color: #7d8982; font-size: 30px;">Order</h1>
+<div class="order" id="order">
+    <form action="">
+        <div class="inputBox">
+            <div class="input">
+                <span>your name</span>
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="input">
+                <span>your number</span>
+                <input type="number" placeholder="enter your number">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your order</span>
+                <input type="text" placeholder="enter food name">
+            </div>
+            <div class="input">
+                <span>additional food</span>
+                <input type="test" placeholder="extra with food">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>how musch</span>
+                <input type="number" placeholder="how many orders">
+            </div>
+            <div class="input">
+                <span>date and time</span>
+                <input type="datetime-local">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your address</span>
+                <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <span>your message</span>
+                <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <input type="submit" value="order now" onclick="order()" class="btn">
+    </form>
+</div>
+<!-- order section ends -->
+
+<!-- review sec -->
+<h1 style="text-align: center ; color: #7d8982; font-size: 30px;">Review</h1>
+<div class="rev" id="revie"style="background-color: #7d8982 ;padding-bottom: 50px;">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div style="margin-left: 200px;padding-top: 30px;">
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="rafa.jpg" class="d-block rounded-circle">
+          </div>
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-top: 20px;">
+            <p>Rafayet Habib</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 200px;padding-top: 30px;">
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="amit.jpg" class="d-block rounded-circle">
+          </div>
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-top: 20px;">
+            <p>Amit dey</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 200px;padding-top: 30px;">
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="kid.jpeg" class="d-block rounded-circle">
+          </div>
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-top: 20px;">
+            <p>Shahidul islam shanto</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 200px;padding-top: 30px;">
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="moon.jpeg" class="d-block rounded-circle">
+          </div>
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-top: 20px;">
+            <p>Moontasir</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 200px;padding-top: 30px;">
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="tunu.jpeg" class="d-block rounded-circle">
+          </div>
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-top: 20px;"><p>Tuhin</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 200px;padding-top: 30px;">
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="atiq.jpg" class="d-block rounded-circle">
+          </div>
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-top: 20px;">
+            <p>Atiq ur Rahman</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 200px;padding-top: 30px;">
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="akil.jpg" class="d-block rounded-circle">
+          </div>
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-top: 20px;">
+            <p>Akil tajwar</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 200px;padding-top: 30px;">
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="fardin.jpg" class="d-block rounded-circle">
+          </div>
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-top: 20px;">
+            <p>fardin bin</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 200px;padding-top: 30px;">
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="raihan.jpg" class="d-block rounded-circle">
+          </div>
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-top: 20px;"><p>Raihan</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore rerum eligendi.</p></div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+
+ <!-- review sec  ends-->
+<!-- footer section starts  -->
+<div class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">bangladesh</a>
+            <a href="#">japan</a>
+            <a href="#">russia</a>
+            <a href="#">USA</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">dishes</a>
+            <a href="#">upcoming</a>
+            <a href="#">reivew</a>
+            <a href="#">order</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">01883671244</a>
+            <a href="#">0178905678</a>
+            <a href="#">farhanrafi@gmail.com</a>
+            <a href="#">rafayetrafi@gmail.com</a>
+            <a href="#">2no. gate,chattogram,bangladesh</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <div class="credit"> copyright@2022 by <span>mr.farhannoob</span> </div>
+
+</div>
+
+<!-- footer section ends -->
+
+   <!-- bootstrap 5-->    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   <!--custom js--> 
+  <script src="script.js"></script>
+  <!--  OWL  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:20,
+  nav:false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:3
+      }
+  }
+})
+  </script>
+</body>
+</html>

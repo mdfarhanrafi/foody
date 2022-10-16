@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background: #fff;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+header .logo i{
+    color:var(--green);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: var(--green);
+}
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color:#fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+
+/*banner*/
+  .banner-container {
+    padding: 100px 100px;
+    padding-top: 100px;
+}
+.carousel-item h1{
+     padding-left: 25px;    
+     color: var(--green);
+     
+}
+.carousel-item p{
+     padding-left: 25px;  
+     color: var(--light-color);  
+     font-size: 25px; 
+}
+/*banner ends*/
+/* product*/
+.main{
+  display : flex;
+  background:whitesmoke;  
+}
+.pro .produ {
+   display: flex;
+   background:whitesmoke;
+   padding: 30px 30px 30px 30px;
+  }
+.pro .prodo {
+   display: flex;
+   background: whitesmoke;
+   padding: 30px 30px 30px 30px;
+}
+.main .pro .problem span{
+      padding: 5px 5px 5px 5px;
+      font-size: 20px;
+      color: var(--green);
+}
+
+.problem{
+     margin-top: 50px;
+     width: 270px;
+     margin:62px;  
+     border: solid #222;
+     border-radius: 15px;    
+     box-shadow: 5px 5px grey;
+}
+.problem-image{
+  background-color: whitesmoke;
+  height: 200px;
+  margin-bottom: 10px;
+  background-size:contain;
+  border-radius: 15px 15px 0 0;
+ 
+   
+}
+.problem-image:hover{
+  background-color: rgb(62,62,62);
+  color: aliceblue;
+  transform: scale(2);
+  transition: all 1s ease;
+}
+.dish-1{
+  background-image: url(dish-1.png);
+}
+.dish-2{
+background-image: url(dish-2.png);
+}
+.dish-3{
+background-image: url(dish-3.png);
+}
+
+.dish-4{
+  background-image: url(dish-4.png);
+}
+.dish-5{
+background-image: url(dish-5.png);
+}
+.dish-6{
+background-image: url(dish-6.png);
+}
+.main .pro p{
+  font-size: 15px;
+  color: #666;
+
+}
+.main button{
+      border: dotted var(--black);
+      padding-left: 5px;
+      font-size: 15px;
+      background-color: #192a56; 
+      color: aliceblue; 
+      cursor: pointer;
+      border-radius:20px ;
+}
+.main button:hover{
+         padding: 0px 20px;
+   
+}
+
+/* product end*/
+
+
+/* upcome start*/  
+.upcom{
+      display:flex;
+      justify-content: center;
+      background-color:var(--); 
+      flex-wrap: wrap;
+  }
+ .upcom p{
+    font-size: 15px;
+    color: #666;
+ }  
+.card{
+     margin-top: 50px;
+     width: 270px;
+     margin:10px;  
+     border-radius: 15px;    
+     box-shadow: 15px 15px #666;
+}
+.card-image{
+     background-color: whitesmoke;
+     height: 200px;
+     margin-bottom: 10px;
+     background-size: cover;
+     border-radius: 15px 15px 0 0;
+}
+
+.menu-1{
+     background-image: url(menu-9.jpg);
+}
+.menu-2{
+  background-image: url(menu-2.jpg);
+}
+.menu-3{
+  background-image: url(menu-3.jpg);
+}
+.card a{
+    background-color:black ;
+    color: whitesmoke;
+    padding: 15px 20px;
+    text-align: center;
+    display: block;
+
+}
+.card:hover{
+  background-color: rgb(62,62,62);
+  color: aliceblue;
+  transform: scale(1.5);
+  transition: all 1s ease;
+} 
+
+/* upcome end*/
+/*Order now */
+.order form{
+  max-width:90rem;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  border:.1rem solid rgba(0,0,0,.2);
+  background:#fff;
+  padding:1.5rem;
+  margin:0 auto;
+}
+.order form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.order form .inputBox .input{
+  width:49%;
+}
+.order form .inputBox .input span{
+  display:block;
+  padding:.5rem 0;
+  font-size: 1.5rem;
+  color:var(--light-color);
+}
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+  background:#eee;
+  border-radius: .5rem;
+  padding:1rem;
+  font-size: 1.6rem;
+  color:var(--black);
+  text-transform: none;
+  margin-bottom: 1rem;
+  width:100%;
+}
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus{
+  border:.1rem solid var(--green);
+}
+.order form .inputBox .input textarea{
+  height:20rem;
+  resize: none;
+}
+.order form .btn{
+  margin-top: 0;
+}
+ 
+
+/*order now ends*/
+/*review strat*/
+.item{
+  padding-bottom: 30px;
+}
+.rev .item p{
+         
+   font-size: 20px;
+   color: #222;
+
+}
+/*review end*/
+/* footer */
+.footer{
+  margin-top: 50px;
+}
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap:1.5rem;
+}
+.footer .box-container .box h3{
+  padding:.5rem 0;
+  font-size: 2.5rem;
+  color:var(--black);
+}
+.footer .box-container .box a{
+  display: block;
+  padding:.5rem 0;
+  font-size: 1.5rem;
+  color:var(--light-color);
+}
+.footer .box-container .box a:hover{
+  color:var(--green);
+  text-decoration: underline;
+}
+.footer .credit{
+  text-align: center;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  font-size: 2rem;
+  color:var(--black);
+  padding:.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+.footer .credit span{
+  color:var(--green);
+}
+/* footeer ends*/
